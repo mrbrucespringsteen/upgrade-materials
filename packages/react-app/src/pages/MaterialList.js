@@ -83,25 +83,28 @@ const MaterialList = () => {
     return (
         <React.Fragment>
             <section className="body-text">
-                <b>The rarity of the amulet is determined by the number of sequential 8s in the hash:</b>
-                <ul style={{ "listStyleType": "none", "paddingTop": "15px" }}>
-                    <b>Infusers</b>
-                    {infusion.map((infuser) => {
-                        return <li style={{ "textDecoration": "none" }}>{infuser}</li>
-                    })}
-                </ul>
-                <ul style={{ "listStyleType": "none", "paddingTop": "15px" }}>
-                    <b>Base Materials</b>
-                    {materials.map((material) => {
-                        return <li style={{ "textDecoration": "none" }}>{material}</li>
-                    })}
-                </ul>
-                <ul style={{ "listStyleType": "none", "paddingTop": "15px" }}>
-                    <b>Modifiers</b>
-                    {modifiers.map((mod) => {
-                        return <li style={{ "textDecoration": "none" }}>{mod}</li>
-                    })}
-                </ul>
+                <section
+                    className="material-wrapper"
+                >
+                    <ul style={{ "listStyleType": "none", "paddingTop": "15px" }}>
+                        <b>Infusers</b>
+                        {infusion.map((infuser) => {
+                            return <li style={{ "textDecoration": "none" }}>{infuser}</li>
+                        })}
+                    </ul>
+                    <ul style={{ "listStyleType": "none", "paddingTop": "15px" }}>
+                        <b>Base Materials</b>
+                        {materials.map((material) => {
+                            return <li style={{ "textDecoration": "none" }}>{material}</li>
+                        })}
+                    </ul>
+                    <ul style={{ "listStyleType": "none", "paddingTop": "15px" }}>
+                        <b>Modifiers</b>
+                        {modifiers.map((mod) => {
+                            return <li style={{ "textDecoration": "none" }}>{mod}</li>
+                        })}
+                    </ul>
+                </section>
             </section>
         </React.Fragment>
     )

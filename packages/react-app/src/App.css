@@ -99,7 +99,9 @@ h1  > em, h2 > em, h3 > em, h4 > em, h5 > em, h6 > em {
   flex-direction: column;
 }
 
-/**  flip horizontally */
-/* .flip {
-  transform: scaleY(-1);
-} */
+@media (min-width: 768px) {
+  .material-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
