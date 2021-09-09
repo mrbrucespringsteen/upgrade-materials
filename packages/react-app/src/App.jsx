@@ -22,6 +22,7 @@ import Home from './pages/Home'
 import Faq from './pages/Faq'
 import Collection from './pages/Collection'
 import Scratchpad from './pages/Scratchpad'
+import MaterialList from './pages/MaterialList'
 
 //! import styles
 import './styles/header.css'
@@ -203,6 +204,7 @@ function App(props) {
         </Menu> */}
 
         <Switch>
+          <Route path="/material-list" component={MaterialList} />
             <Route path="/scratchpad"
             >
               <Scratchpad
