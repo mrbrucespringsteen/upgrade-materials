@@ -30,6 +30,9 @@ const Header = () => {
             <a href="/collection" className={currentPage === 'collection' ? 'active' : 'nav-item'}>collection</a>
           </div>
           <div>
+            <a href="/material-list" className={currentPage === 'material-list' ? 'active' : 'nav-item'}>material list</a>
+          </div>
+          <div>
             <a href="faq" className={currentPage === 'faq' ? 'active' : 'nav-item'}>faq</a>
           </div>
         </nav>
