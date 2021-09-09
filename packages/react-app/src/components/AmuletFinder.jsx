@@ -354,7 +354,7 @@ export default function AmuletFinder(props) {
                     <>
                         <div style={{"textAlign": "center", "fontSize":"24px", "paddingTop":"20px", "paddingBottom":"20px"}}>
                         <div>This is {rarity === 'Uncommon' || rarity === 'Epic' ? "an" : "a"} {rarity.toLowerCase()} amulet.</div>
-                        {splitText !== undefined && typeof parseInt(splitText) === 'number' && typeof parseInt(splitText) > 88 && score > 3 ? <div>Warning: the number suffix is >88 so it needs to meet very special conditions to be valid. See <a href="/rules" target="_blank" style={{"color": "#0038FF"}}>lootupgrad.es/rules</a> for more.</div> : null}
+                        {splitText !== undefined && typeof parseInt(splitText) === 'number' && typeof parseInt(splitText) > 88 && score > 3 ? <div>Warning: the number suffix is >88 so it needs to meet very special conditions to be valid. See <a href="/faq" target="_blank" style={{"color": "#0038FF"}}>lootupgrad.es/rules</a> for more.</div> : null}
                         </div>
                         <div>
                         SHA-256 hash:
@@ -362,7 +362,7 @@ export default function AmuletFinder(props) {
                                 {countUtf8Bytes(text)} bytes
                             </span>
                             <br/>
-                            {hash.split('x')[1]}
+                            {id.split('x')[1]}
                         </div>
                     </>
                 : null}
