@@ -6,6 +6,7 @@ import { useUserAddress } from "eth-hooks";
 import { Transactor } from '../helpers';
 import { Link } from "react-router-dom";
 
+
 const ZERO_ADDRESS = '0x0000000000000000000000000000000000000000';
 
 export default function AmuletMinter(props) {

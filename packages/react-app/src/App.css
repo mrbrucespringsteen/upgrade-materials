@@ -60,6 +60,11 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "CrimsonText-SemiBold";
 }
 
+.upgrade-title {
+  font-family: "YatraOne-Regular";
+  font-size: 3.5rem;
+}
+
 b > em {
   font-family: "CrimsonText-BoldItalic";
 }
@@ -99,7 +104,9 @@ h1  > em, h2 > em, h3 > em, h4 > em, h5 > em, h6 > em {
   flex-direction: column;
 }
 
-/**  flip horizontally */
-/* .flip {
-  transform: scaleY(-1);
-} */
+@media (min-width: 768px) {
+  .material-wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
