@@ -36,14 +36,14 @@ const Header = () => {
         <div className="title" >
         <a href="/">
           <div style={{"text-align": "center"}}>
-            <img
+            <h1
+              className="upgrade-title"
               style={{"paddingTop":"30px", "paddingBottom": "30px"}}
-              src={process.env.PUBLIC_URL + "./Amulet-logo.svg"}
-            />
+            >Upgrade Materials</h1>
           </div>
           </a>
           <div className="site-description">
-            An amulet is a kind of poem that depends on language, code, and luck.
+            Upgrade Materials are NFTs that can upgrade your loot and mloot.
           </div>
         </div>
     </React.Fragment>
