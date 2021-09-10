@@ -44,5 +44,14 @@
       "**/hardhat",
       "**/hardhat/**"
     ]
+  },
+  "dependencies": {
+    "@ethersproject/address": "^5.4.0",
+    "@ethersproject/bignumber": "^5.4.1",
+    "@ethersproject/constants": "^5.4.0",
+    "@ethersproject/contracts": "^5.4.1",
+    "@ethersproject/networks": "^5.4.2",
+    "@ethersproject/providers": "^5.4.5",
+    "@ethersproject/solidity": "^5.4.0"
   }
 }
